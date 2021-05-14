@@ -80,7 +80,7 @@ const HomeBanner = () => {
         </header>
 
         <motion.div
-          initial={true}
+          initial={false}
           animate={showBurgerMenu ? "opened" : "closed"}
           variants={menuVariants}
           transition={{ duration: 0.3 }}
