@@ -175,7 +175,7 @@ nav {
 
 .burger-menu {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: white;
   position: absolute;
   color: black;
