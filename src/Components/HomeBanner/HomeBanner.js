@@ -146,14 +146,14 @@ const HomeBanner = () => {
             </p>
             <div className="button-container">
               <motion.button
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.9 }}
                 className="read-button"
               >
                 READ MORE
               </motion.button>
               <motion.button
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.9 }}
                 className="contact-button"
               >
@@ -162,9 +162,13 @@ const HomeBanner = () => {
             </div>
           </div>
 
-          <div className="banner-img">
+          <motion.div
+            initial={{ scale: 0.8 }}
+            animate={{ scale: 1 }}
+            className="banner-img"
+          >
             <img src="/crop.png" alt="" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

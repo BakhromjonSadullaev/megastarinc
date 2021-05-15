@@ -1,0 +1,123 @@
+.questions-section {
+  background-color: #f9f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question {
+  width: 500px;
+  margin-bottom: 0.5rem;
+  margin-left: 25rem;
+}
+
+.question-title {
+  color: rgb(63, 63, 63);
+  margin-bottom: 2rem;
+  font-size: 19pt;
+  margin-left: 25rem;
+}
+
+.question-header {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(216, 216, 216);
+  background: #f9f7fb;
+}
+
+.question-header h4 {
+  color: rgb(70, 70, 70);
+  font-weight: 600;
+}
+
+.question-logo {
+  display: flex;
+  align-items: center;
+}
+
+.quest-icon {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+/* .question-header h1 {
+  margin-right: 1rem;
+  border: 1px solid green;
+  padding: 8px 16px;
+} */
+
+.active {
+  transition: transform 0.5s ease;
+  background-color: green;
+  padding: 8px 16px;
+}
+
+.question-button {
+  padding: 13px 12px;
+  margin-right: 1rem;
+  font-size: 1.8rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.question-content {
+  border: 1px solid rgb(224, 224, 224);
+  padding: 18px 10px;
+  background: #f9f7fb;
+  color: rgb(150, 150, 150);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1000px) {
+  .video-section {
+    display: none;
+  }
+
+  .questions-section {
+    background-color: #f9f7fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+
+  .question-title {
+    margin-top: 5rem;
+    margin-left: 0;
+  }
+
+  .question {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .question-title {
+    font-size: 12pt;
+  }
+  .question {
+    width: 350px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .question {
+    width: 250px;
+    font-size: 11px;
+  }
+
+  .question-button {
+    font-size: 1rem;
+  }
+
+  .question-content {
+    font-size: 11px;
+  }
+}
