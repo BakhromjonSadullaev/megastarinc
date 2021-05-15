@@ -86,6 +86,13 @@ const HomeBanner = () => {
           transition={{ duration: 0.3 }}
           className="burger-menu"
         >
+          <div style={{ display: "none" }}>
+            {
+              (document.body.style.overflow = `${
+                showBurgerMenu ? "hidden" : "scroll"
+              } `)
+            }
+          </div>
           <motion.div
             initial={{ scale: 0.5 }}
             animate={{ scale: 1 }}
