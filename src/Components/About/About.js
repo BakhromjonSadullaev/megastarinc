@@ -2,14 +2,16 @@ import React from "react";
 import "./about.css";
 import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="about">
       <h1>About US</h1>
       <div className="line"></div>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quia.
-        Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet
+        We have revolutionized transport service in USA with our unique features
+        which include cost-effectiveness, latest technology and excellent
+        customer service.
       </p>
 
       <div className="about-content-container">
@@ -22,13 +24,15 @@ const About = () => {
           </div>
           <h3>Cargo</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-            delectus repudiandae facilis libero hic perferendis.
+            We cater to the cargo moving requirements of our esteemed customers
+            across USA. We deliver your cargo safe and on time.
           </p>
-          <div className="about-link">
-            <a>Read More</a>
-            <BsArrowRight style={{ fontSize: "1.6rem" }} />
-          </div>
+          <Link to="about-us">
+            <div className="about-link">
+              <a>Read More</a>
+              <BsArrowRight style={{ fontSize: "1.6rem" }} />
+            </div>
+          </Link>
         </div>
         <div className="about-content">
           <div className="img-holder">
@@ -37,15 +41,17 @@ const About = () => {
               alt=""
             />
           </div>
-          <h3>WAREHOUSING</h3>
+          <h3>MEGASTARINC TECHNOLOGY</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-            delectus repudiandae facilis libero hic perferendis.
+            Our advanced solutions simplify shipping. You want your shipments to
+            move as efficiently and as safely as possible.
           </p>
-          <div className="about-link">
-            <a>Read More</a>
-            <BsArrowRight style={{ fontSize: "1.6rem" }} />
-          </div>
+          <Link to="about-us">
+            <div className="about-link">
+              <a>Read More</a>
+              <BsArrowRight style={{ fontSize: "1.6rem" }} />
+            </div>
+          </Link>
         </div>
         <div className="about-content">
           <div className="img-holder">
@@ -54,15 +60,18 @@ const About = () => {
               alt=""
             />
           </div>
-          <h3>DESTINATION POSSIBILITIES</h3>
+          <h3>SAFETY</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-            delectus repudiandae facilis libero hic perferendis.
+            We put safety first – for each other, our communities and our
+            environment. We do things the right way, the first time. We are
+            collaborative and supportive.
           </p>
-          <div className="about-link">
-            <a>Read More</a>
-            <BsArrowRight style={{ fontSize: "1.6rem" }} />
-          </div>
+          <Link to="about-us">
+            <div className="about-link">
+              <a>Read More</a>
+              <BsArrowRight style={{ fontSize: "1.6rem" }} />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

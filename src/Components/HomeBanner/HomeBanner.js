@@ -14,6 +14,7 @@ import {
   FaRegClock,
 } from "react-icons/fa";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { Link } from "react-router-dom";
 const HomeBanner = () => {
   const menuVariants = {
     opened: {
@@ -88,7 +89,7 @@ const HomeBanner = () => {
         >
           <div style={{ display: "none" }}>
             {
-              (document.body.style.overflow = `${
+              (document.body.style.overflowY = `${
                 showBurgerMenu ? "hidden" : "scroll"
               } `)
             }
@@ -102,7 +103,9 @@ const HomeBanner = () => {
             <p>Home</p>
             <p>Careers</p>
             <p>Our Services</p>
-            <p>About Us</p>
+            <Link style={{ textDecoration: "none" }} to="about-us">
+              <p>About Us</p>
+            </Link>
             <p>News</p>
             <p>Contact Us</p>
           </motion.div>
@@ -139,7 +142,12 @@ const HomeBanner = () => {
             <p>Home</p>
             <p>Careers</p>
             <p>Our Services</p>
-            <p>About Us</p>
+            <Link
+              style={{ textDecoration: "none", textDecorationColor: "red" }}
+              to="about-us"
+            >
+              <p>About Us</p>
+            </Link>
             <p>News</p>
             <p>Contact Us</p>
           </div>
@@ -148,17 +156,20 @@ const HomeBanner = () => {
           <div className="banner-text">
             <h1>UNBEATABLE TRUCKING & TRANSPORT SERVICES</h1>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
-              ducimus debitis illo iure praesentium
+              Reliable logistics and transportation worldwide company.
+              Megastarinc is the best transport company in USA delivering
+              excellence for all types of businesses
             </p>
             <div className="button-container">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.9 }}
-                className="read-button"
-              >
-                READ MORE
-              </motion.button>
+              <Link to="about-us">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.9 }}
+                  className="read-button"
+                >
+                  READ MORE
+                </motion.button>
+              </Link>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.9 }}

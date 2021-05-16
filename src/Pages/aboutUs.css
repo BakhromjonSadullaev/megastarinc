@@ -1,0 +1,153 @@
+.back {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.about-page-title {
+  color: gray;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.back-test {
+  padding: 1.5rem 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.856);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(46, 150, 131, 0.2) 0px 7px 29px 0px;
+}
+
+.back-test-container {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  justify-content: space-between;
+}
+
+.back-to-home {
+  padding: 10px 20px;
+  border: none;
+  background-color: #10b098;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+
+.green-line {
+  height: 70px;
+  margin-top: 1rem;
+  background-color: #10b098;
+}
+
+.about-img {
+  /* box-shadow: rgba(46, 150, 131, 0.2) 0px 7px 29px 0px; */
+}
+
+.first-block {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.first-block-text {
+  max-width: 400px;
+}
+
+.first-block-text h2 {
+  margin-bottom: 1rem;
+  color: #0a8f7b;
+}
+
+.first-block-text p {
+  line-height: 25px;
+  color: gray;
+  font-weight: 400;
+}
+
+.second-block {
+  background-color: rgb(245, 255, 251);
+  /* background-color: #f9feff; */
+  padding: 4rem 0;
+  margin-top: 2rem;
+}
+
+.second-block-container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.third-block {
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 70%;
+  justify-content: space-around;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 850px) {
+  .back {
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .back button {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .first-block img {
+    display: none;
+  }
+
+  .second-block-container img {
+    display: none;
+  }
+
+  .third-block img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .back {
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .back-test-container h1 {
+    display: none;
+  }
+  .back-test-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
