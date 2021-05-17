@@ -26,6 +26,7 @@ const Testimonials = () => {
       <div className="line"></div>
       <div className="testimonial-container">
         <Carousel
+          enableAutoPlay={true}
           renderPagination={({ pages, activePage, onClick }) => {
             return (
               <div className="pag-container">

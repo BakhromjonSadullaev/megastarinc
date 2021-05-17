@@ -19,8 +19,8 @@ const Services = () => {
           <div className="service-content">
             <h2>Cargo</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
-              assumenda!
+              We cater to the cargo moving requirements of our esteemed
+              customers across USA.
             </p>
           </div>
         </div>
@@ -31,8 +31,8 @@ const Services = () => {
           <div className="service-content">
             <h2>PACKAGING AND STORAGE</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
-              assumenda!
+              We ensure safe packaging, as well as storage and delivery of your
+              goods
             </p>
           </div>
         </div>
@@ -43,8 +43,8 @@ const Services = () => {
           <div className="service-content">
             <h2>DOOR TO DOOR DELIVERY</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
-              assumenda!
+              The pickup and delivery points does not matter up to our
+              experienced drivers
             </p>
           </div>
         </div>
@@ -55,8 +55,8 @@ const Services = () => {
           <div className="service-content">
             <h2>PACKAGING AND STORAGE</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
-              assumenda!
+              We ensure safe packaging, as well as storage and delivery of your
+              goods
             </p>
           </div>
         </div>
@@ -65,10 +65,10 @@ const Services = () => {
             <FaLuggageCart />
           </div>
           <div className="service-content">
-            <h2>WAREHOUSING</h2>
+            <h2>GET VERIFIED DRIVERS</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
-              assumenda!
+              In case, the delivery requires special service, we provide the
+              customer with verified drivers
             </p>
           </div>
         </div>
@@ -77,10 +77,10 @@ const Services = () => {
             <BiWorld />
           </div>
           <div className="service-content">
-            <h2>WORLDWIDE TRANSPORTING</h2>
+            <h2>SECURE PAYMENT</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
-              assumenda!
+              Quick and hassle-free online payments are our thing. No hidden
+              costs.
             </p>
           </div>
         </div>

@@ -11,6 +11,7 @@ import Questions from "./Components/Questions/Questions";
 import Services from "./Components/Services/Services";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import AboutUs from "./Pages/AboutUs";
+import ContactUs from "./Components/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Services />
             <Count />
             <Testimonials />
+            <ContactUs />
             <Questions />
             <CareerDivider />
             <Footer />

@@ -23,7 +23,7 @@ const Count = () => {
             )}
           </CountUp>
         </div>
-        <p>PROJECTS DONE</p>
+        <p>DELIVERY DONE</p>
       </div>
 
       <div className="count-info">

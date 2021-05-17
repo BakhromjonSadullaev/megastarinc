@@ -21,9 +21,9 @@ const Footer = () => {
         <div className="footer-comp-info footer-links">
           <h1>MEGASTARINC</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,
-            placeat! Voluptas porro placeat blanditiis, obcaecati numquam quos
-            ea! Similique, voluptatibus.
+            Reliable logistics and transportation worldwide company. Megastarinc
+            is the best transport company in USA delivering excellence for all
+            types of businesses
           </p>
           <h4>NEWSLETTER SIGNUP</h4>
           <form>
