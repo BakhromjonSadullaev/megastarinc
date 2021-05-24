@@ -12,12 +12,17 @@ import Services from "./Components/Services/Services";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import AboutUs from "./Pages/AboutUs";
 import ContactUs from "./Components/ContactUs/ContactUs";
+import Careers from "./Pages/Careers";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
+          <Route path="/careers">
+            <Careers />
+            <Footer />
+          </Route>
           <Route path="/about-us">
             <AboutUs />
             <Footer />

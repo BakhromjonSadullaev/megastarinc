@@ -175,7 +175,7 @@ nav {
 
 .burger-menu {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background-color: white;
   position: absolute;
   color: black;
@@ -186,16 +186,16 @@ nav {
 }
 
 .burger-links {
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 
 .burger-links p {
   cursor: pointer;
   outline: none;
-  margin: 50px 0;
-  font-size: 21px;
+  margin: 25px 0;
+  font-size: 20px;
   width: 200px;
-  padding: 15px 0;
+  padding: 10px 0;
   border-radius: 3px;
   text-align: center;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -213,8 +213,8 @@ nav {
   justify-content: center;
 }
 .burger-logo {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .logo-burger {
@@ -225,7 +225,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .info-burger p {

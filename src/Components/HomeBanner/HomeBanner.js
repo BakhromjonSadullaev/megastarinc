@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./homebanner.css";
 import { motion } from "framer-motion";
 // import background from "/mesh-gradient1.png";
@@ -33,6 +33,7 @@ const HomeBanner = () => {
   };
 
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
+  const [isRoute, setIsRoute] = useState(false);
   return (
     <div
       className="Homebanner"
@@ -90,7 +91,7 @@ const HomeBanner = () => {
           <div style={{ display: "none" }}>
             {
               (document.body.style.overflowY = `${
-                showBurgerMenu ? "hidden" : "scroll"
+                showBurgerMenu && isRoute == false ? "hidden" : "scroll"
               } `)
             }
           </div>
@@ -100,22 +101,51 @@ const HomeBanner = () => {
             transition={{ duration: 3 }}
             className="burger-links"
           >
-            <p>Home</p>
-            <p>Careers</p>
-            <p>Our Services</p>
+            <p
+              onClick={() => (
+                setShowBurgerMenu(false), console.log(showBurgerMenu)
+              )}
+            >
+              Home
+            </p>
+            <p onClick={() => setShowBurgerMenu(true)}>Careers</p>
+            <p
+              onClick={() => (
+                setShowBurgerMenu(false), console.log(showBurgerMenu)
+              )}
+            >
+              Our Services
+            </p>
             <Link style={{ textDecoration: "none" }} to="about-us">
-              <p>About Us</p>
+              <p onClick={() => (setIsRoute(true), setShowBurgerMenu(false))}>
+                About Us
+              </p>
             </Link>
-            <p>News</p>
-            <p>Contact Us</p>
+            <p onClick={() => setShowBurgerMenu(true)}>News</p>
+            <p onClick={() => setShowBurgerMenu(true)}>Contact Us</p>
           </motion.div>
           <div className="burger-info">
             <div className="burger-logo">
-              <FaFacebookF className="logo-burger" />
-              <FaGooglePlusG className="logo-burger" />
-              <FaTwitter className="logo-burger" />
-              <FaInstagram className="logo-burger" />
-              <FaYoutube className="logo-burger" />
+              <FaFacebookF
+                onClick={() => setShowBurgerMenu(true)}
+                className="logo-burger"
+              />
+              <FaGooglePlusG
+                onClick={() => setShowBurgerMenu(true)}
+                className="logo-burger"
+              />
+              <FaTwitter
+                onClick={() => setShowBurgerMenu(true)}
+                className="logo-burger"
+              />
+              <FaInstagram
+                onClick={() => setShowBurgerMenu(true)}
+                className="logo-burger"
+              />
+              <FaYoutube
+                onClick={() => setShowBurgerMenu(true)}
+                className="logo-burger"
+              />
             </div>
             <div>
               <div className="info-burger">
@@ -140,7 +170,9 @@ const HomeBanner = () => {
           </div>
           <div className="nav-menu">
             <p>Home</p>
-            <p>Careers</p>
+            <Link to="careers">
+              <p>Careers</p>
+            </Link>
             <p>Our Services</p>
             <Link
               style={{ textDecoration: "none", textDecorationColor: "red" }}

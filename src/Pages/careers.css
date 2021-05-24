@@ -1,0 +1,175 @@
+.careers-title {
+  text-align: center;
+  margin: 5rem 0;
+  color: gray;
+}
+
+.career-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.career-info-card {
+  max-width: 350px;
+  padding: 25px 30px;
+  border-radius: 10px;
+  margin: 2rem 3rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.career-info-card h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #10b098;
+}
+
+.career-info-card ul li {
+  list-style: none;
+}
+
+.careers-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin-bottom: 6rem;
+  margin-top: 4rem;
+}
+
+.careers-form div {
+  /* margin: 1rem 0; */
+  color: black;
+}
+
+.default-infoInput-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.default-infoInput-container input {
+  color: black;
+  margin: 0 1rem 2rem 1rem;
+  padding: 16px 10px;
+  border-radius: 3px;
+  border: 1px solid #a7a7a7;
+  color: #10b098;
+}
+
+.default-infoInput-container input:hover {
+  border: 1px solid #10b098;
+  outline: none;
+}
+
+.input-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.option-cdl {
+  position: relative;
+}
+
+.input-option .option-cdl {
+  margin: 0 1rem;
+}
+
+.input-option .option-cdl input {
+  border-radius: 3px;
+  border: 1px solid #a7a7a7;
+  padding: 16px 10px;
+  color: black;
+}
+
+.input-option .option-cdl input:hover {
+  border: 1px solid #10b098;
+}
+
+.lab {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.file-input::before {
+  color: gray;
+  content: "Upload CDL";
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 16px 20px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+.file-input:hover::before {
+  border: 1px solid #10b098;
+}
+
+.filename {
+  position: absolute;
+  top: 25px;
+  right: 0;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.options {
+  position: absolute;
+  z-index: 1;
+  top: 33px;
+  background-color: white;
+  width: 100%;
+  padding: 0px 0px;
+}
+
+.options p {
+  cursor: pointer;
+  padding: 15px 10px;
+  font-weight: 500;
+  background-color: #10b098;
+  color: white;
+  border-bottom: 1px solid lightgray;
+  font-size: 15px;
+}
+
+.options p:hover {
+  background-color: #088572;
+}
+
+.send-vacant {
+  margin-top: 1rem;
+  padding: 15px 60px;
+  border: none;
+  background-color: #10b098;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.form-title {
+  margin-bottom: 2.5rem;
+  color: gray;
+}
