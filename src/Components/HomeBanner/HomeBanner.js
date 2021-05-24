@@ -108,7 +108,9 @@ const HomeBanner = () => {
             >
               Home
             </p>
-            <p onClick={() => setShowBurgerMenu(true)}>Careers</p>
+            <Link to="/careers">
+              <p onClick={() => setShowBurgerMenu(true)}>Careers</p>
+            </Link>
             <p
               onClick={() => (
                 setShowBurgerMenu(false), console.log(showBurgerMenu)
