@@ -34,6 +34,12 @@ const HomeBanner = () => {
 
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
   const [isRoute, setIsRoute] = useState(false);
+  useEffect(() => {
+    document.body.style.overflowY = `${
+      showBurgerMenu && isRoute == false ? "hidden" : "scroll"
+    } `;
+  }, []);
+
   return (
     <div
       className="Homebanner"
@@ -88,13 +94,7 @@ const HomeBanner = () => {
           transition={{ duration: 0.3 }}
           className="burger-menu"
         >
-          <div style={{ display: "none" }}>
-            {
-              (document.body.style.overflowY = `${
-                showBurgerMenu && isRoute == false ? "hidden" : "scroll"
-              } `)
-            }
-          </div>
+          <div style={{ display: "none" }}>{}</div>
           <motion.div
             initial={{ scale: 0.5 }}
             animate={{ scale: 1 }}
@@ -117,7 +117,13 @@ const HomeBanner = () => {
               Our Services
             </p>
             <Link style={{ textDecoration: "none" }} to="about-us">
-              <p onClick={() => (setIsRoute(true), setShowBurgerMenu(false))}>
+              <p
+                onClick={() => (
+                  setIsRoute(true),
+                  setShowBurgerMenu(false),
+                  console.log(showBurgerMenu)
+                )}
+              >
                 About Us
               </p>
             </Link>
