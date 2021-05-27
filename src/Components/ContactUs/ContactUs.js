@@ -15,11 +15,11 @@ const ContactUs = () => {
         <div className="contact-info">
           <div className="contact-info-with-logo">
             <HiLocationMarker />
-            <p>14 Tottenhem Court London, England</p>
+            <p>4823 North Central Ave Apt 3A Chicago IL</p>
           </div>
           <div className="contact-info-with-logo">
             <HiMailOpen />
-            <p>info@megastarinc.com</p>
+            <p>info@megastar.com</p>
           </div>
           <div className="contact-info-with-logo">
             <HiClock />
@@ -28,11 +28,11 @@ const ContactUs = () => {
           <div className="contact-info-divider"></div>
           <div className="contact-info-with-logo">
             <HiPhone />
-            <p>(102) 6666 8888</p>
+            <p>773-497-77-28</p>
           </div>
           <div className="contact-info-with-logo">
             <MdContactPhone />
-            <p>102) 8888 9999</p>
+            <p>312-668-9730</p>
           </div>
         </div>
       </div>

@@ -31,7 +31,7 @@ const AboutUs = () => {
           <div className="first-block-text">
             <h2>Cargo</h2>
             <p>
-              Megastarinc is the best transport company in USA delivering
+              Megastar is the best transport company in USA delivering
               excellence for all types of businesses. We cater to the cargo
               moving requirements of our esteemed customers across USA. We
               strictly adhere to the latest safety and compliance features and
@@ -49,7 +49,7 @@ const AboutUs = () => {
         <div className="second-block">
           <div className="second-block-container">
             <div className="first-block-text">
-              <h2>MEGASTARINC TECHNOLOGY</h2>
+              <h2>MEGASTAR TECHNOLOGY</h2>
               <p>
                 We're curious. We push boundaries through game-changing ideas –
                 the kind of advances no one else thinks are possible. We have
@@ -79,7 +79,7 @@ const AboutUs = () => {
               One of our main objectives is to achieve zero job-related injuries
               and accidents. We use training and technology to continuously
               improve our safety ecosystem, and we have{" "}
-              <span style={{ color: "#10b098" }}>MEGASTARINC</span> safety
+              <span style={{ color: "#10b098" }}>MEGASTAR</span> safety
               professionals positioned across our operating regions.
             </p>
           </div>

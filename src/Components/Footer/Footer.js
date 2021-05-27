@@ -20,10 +20,10 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-container">
         <div className="footer-comp-info footer-links">
-          <h1>MEGASTARINC</h1>
+          <h1>MEGASTAR</h1>
           <p>
-            Reliable logistics and transportation worldwide company. Megastarinc
-            is the best transport company in USA delivering excellence for all
+            Reliable logistics and transportation worldwide company. Megastar is
+            the best transport company in USA delivering excellence for all
             types of businesses
           </p>
           <h4>NEWSLETTER SIGNUP</h4>
@@ -66,19 +66,19 @@ const Footer = () => {
           <h3>TRANSPORT LINKS </h3>
           <div className="useful-links">
             <GoLocation />
-            <p>14 Tottenhem Court London, England</p>
+            <p>4823 North Central Ave Apt 3A Chicago IL</p>
           </div>
           <div className="useful-links">
             <FaPhoneAlt />
-            <p>(102) 6666 8888</p>
+            <p>773-497-77-28</p>
           </div>
           <div className="useful-links">
             <HiMail />
-            <p>info@megastarinc.com</p>
+            <p>info@megastar.com</p>
           </div>
           <div className="useful-links">
             <MdContactPhone />
-            <p>(102) 8888 9999</p>
+            <p>312-668-9730</p>
           </div>
           <div className="useful-links">
             <BsClock />
@@ -95,7 +95,13 @@ const Footer = () => {
           <FaInstagram className="footer-icons" />
         </div>
         <div className="licence">
-          <span>© Copyrights 2021 Megastarinc. All rights reserved</span>
+          <span>
+            © Copyrights 2021 Megastar. All rights reserved. Developed by
+            <a href="https://itic.netlify.com">
+              {" "}
+              <span style={{ color: "#10b098" }}> Bakhromjon</span>
+            </a>
+          </span>
         </div>
       </div>
     </div>

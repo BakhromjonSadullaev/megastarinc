@@ -65,7 +65,7 @@ const HomeBanner = () => {
           <div className="header-container">
             <div className="min-logo">
               <div className="min-logo-container">
-                <h1>MEGASTARINC</h1>
+                <h1>MEGASTAR</h1>
               </div>
               <div
                 onClick={() => setShowBurgerMenu(!showBurgerMenu)}
@@ -85,11 +85,11 @@ const HomeBanner = () => {
             <div className="header-info">
               <div className="info">
                 <FaHome />
-                <p>14 Tottenhem Court Road</p>
+                <p>4823 North Central Ave Apt 3A Chicago IL</p>
               </div>
               <div className="info">
                 <FaPhoneAlt />
-                <p>1-777-77-777</p>
+                <p>773-497-77-28</p>
               </div>
               <div className="info">
                 <FaRegClock />
@@ -172,11 +172,11 @@ const HomeBanner = () => {
             <div>
               <div className="info-burger">
                 <FaHome />
-                <p>14 Tottenhem Court Road</p>
+                <p>4823 North Central Ave Apt 3A Chicago IL</p>
               </div>
               <div className="info-burger">
                 <FaPhoneAlt />
-                <p>1-777-77-777</p>
+                <p>773-497-77-28</p>
               </div>
               <div className="info-burger">
                 <FaRegClock />
@@ -188,7 +188,7 @@ const HomeBanner = () => {
 
         <nav>
           <div className="logo">
-            <h1>MEGASTARINC</h1>
+            <h1>MEGASTAR</h1>
           </div>
           <div className="nav-menu">
             <p>Home</p>
@@ -216,9 +216,9 @@ const HomeBanner = () => {
           <div className="banner-text">
             <h1>UNBEATABLE TRUCKING & TRANSPORT SERVICES</h1>
             <p>
-              Reliable logistics and transportation worldwide company.
-              Megastarinc is the best transport company in USA delivering
-              excellence for all types of businesses
+              Reliable logistics and transportation worldwide company. Megastar
+              is the best transport company in USA delivering excellence for all
+              types of businesses
             </p>
             <div className="button-container">
               <Link to="about-us">

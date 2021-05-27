@@ -41,7 +41,7 @@ const About = () => {
               alt=""
             />
           </div>
-          <h3>MEGASTARINC TECHNOLOGY</h3>
+          <h3>MEGASTAR TECHNOLOGY</h3>
           <p>
             Our advanced solutions simplify shipping. You want your shipments to
             move as efficiently and as safely as possible.
