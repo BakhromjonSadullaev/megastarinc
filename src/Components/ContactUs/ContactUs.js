@@ -7,7 +7,7 @@ import { MdContactPhone } from "react-icons/md";
 
 const ContactUs = () => {
   return (
-    <div className="contact-us">
+    <div id="contactsId" className="contact-us">
       <div className="video-info">
         <video muted loop autoPlay>
           <source src="/pitch.mp4" />

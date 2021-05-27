@@ -39,8 +39,10 @@ const Questions = () => {
           </div>
           {showAns && (
             <div className="question-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              deserunt.
+              We have the ability to think about a task or a problem in a new or
+              different way, or to use the imagination to generate new ideas.
+              Creativity enables us to solve complex problems or find
+              interesting ways to approach tasks.
             </div>
           )}
         </div>
@@ -70,8 +72,9 @@ const Questions = () => {
           </div>
           {showAns1 && (
             <div className="question-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              deserunt.
+              We are reliable, supportive and honest. Quality over quantity
+              applies to friendships as much as anything else in life. So our
+              clients and our community as the whole family for us !
             </div>
           )}
         </div>
@@ -101,8 +104,8 @@ const Questions = () => {
           </div>
           {showAns2 && (
             <div className="question-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              deserunt.
+              We are always looking for ways to deliver quality service with our
+              team and we will succeed !
             </div>
           )}
         </div>
@@ -132,8 +135,9 @@ const Questions = () => {
           </div>
           {showAns3 && (
             <div className="question-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              deserunt.
+              The main purpose of Megastarinc is to explore new ways of
+              improvement for satisfying clients and being in the high rank
+              among competitors
             </div>
           )}
         </div>

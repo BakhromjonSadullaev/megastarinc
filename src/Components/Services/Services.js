@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./services.css";
 
 import { FaTruckMoving, FaLuggageCart } from "react-icons/fa";
@@ -8,7 +8,7 @@ import { AiFillContainer } from "react-icons/ai";
 import { BiWorld } from "react-icons/bi";
 const Services = () => {
   return (
-    <div className="services">
+    <div id="servicesId" className="services">
       <h1>Our Services</h1>
       <div className="line"></div>
       <div className="services-container">

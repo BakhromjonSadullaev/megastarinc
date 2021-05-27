@@ -14,6 +14,7 @@ import { BsArrowRight, BsClock } from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
 import { HiMail } from "react-icons/hi";
 import { MdContactPhone } from "react-icons/md";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footer">
@@ -37,20 +38,29 @@ const Footer = () => {
           <h3>USEFUL LINKS </h3>
           <div className="useful-links">
             <BsArrowRight />
-            <p>About Us</p>
+            <Link to="/about-us">
+              {" "}
+              <p>About Us</p>
+            </Link>
           </div>
+          <a href="#servicesId">
+            <div className="useful-links">
+              <BsArrowRight />
+              <p>Our Services</p>
+            </div>
+          </a>
           <div className="useful-links">
             <BsArrowRight />
-            <p>Our Services</p>
+            <Link to="/careers">
+              <p>Careers</p>
+            </Link>
           </div>
-          <div className="useful-links">
-            <BsArrowRight />
-            <p>Careers</p>
-          </div>
-          <div className="useful-links">
-            <BsArrowRight />
-            <p>Contact Us</p>
-          </div>
+          <a href="#contactsId">
+            <div className="useful-links">
+              <BsArrowRight />
+              <p>Contact Us</p>
+            </div>
+          </a>
         </div>
         <div className="footer-links">
           <h3>TRANSPORT LINKS </h3>

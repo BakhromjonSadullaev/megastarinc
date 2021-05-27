@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
+import { HashLink } from "react-router-hash-link";
 import "./homebanner.css";
 import { motion } from "framer-motion";
+import { useHistory } from "react-router-dom";
 // import background from "/mesh-gradient1.png";
 
 import {
@@ -33,12 +35,22 @@ const HomeBanner = () => {
   };
 
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
-  const [isRoute, setIsRoute] = useState(false);
+  const [block, setBlock] = useState(false);
+  const history = useHistory();
   useEffect(() => {
-    document.body.style.overflowY = `${
-      showBurgerMenu && isRoute == false ? "hidden" : "scroll"
-    } `;
-  }, []);
+    if (!showBurgerMenu) return; //guard overflowY=hidden
+
+    document.body.style.overflowY = "hidden";
+
+    return () => {
+      document.body.style.overflowY = "scroll";
+    };
+  }, [showBurgerMenu]);
+
+  const onLinkClick = () => {
+    setShowBurgerMenu(false);
+    document.body.style.overflowY = "unset";
+  };
 
   return (
     <div
@@ -94,43 +106,45 @@ const HomeBanner = () => {
           transition={{ duration: 0.3 }}
           className="burger-menu"
         >
-          <div style={{ display: "none" }}>{}</div>
+          <div style={{ display: "none" }}></div>
           <motion.div
             initial={{ scale: 0.5 }}
             animate={{ scale: 1 }}
             transition={{ duration: 3 }}
             className="burger-links"
           >
-            <p
-              onClick={() => (
-                setShowBurgerMenu(false), console.log(showBurgerMenu)
-              )}
-            >
-              Home
-            </p>
+            <Link to="/">
+              <p
+                onClick={() => (
+                  setShowBurgerMenu(false), console.log(showBurgerMenu)
+                )}
+              >
+                Home
+              </p>
+            </Link>
             <Link to="/careers">
               <p onClick={() => setShowBurgerMenu(true)}>Careers</p>
             </Link>
-            <p
-              onClick={() => (
-                setShowBurgerMenu(false), console.log(showBurgerMenu)
-              )}
-            >
-              Our Services
-            </p>
-            <Link style={{ textDecoration: "none" }} to="about-us">
+            <a href="#servicesId">
               <p
                 onClick={() => (
-                  setIsRoute(true),
-                  setShowBurgerMenu(false),
-                  console.log(showBurgerMenu)
+                  setShowBurgerMenu(false), console.log(showBurgerMenu)
                 )}
               >
+                Our Services
+              </p>
+            </a>
+            <Link style={{ textDecoration: "none" }} to="about-us">
+              <p onClick={(onLinkClick, console.log(showBurgerMenu))}>
                 About Us
               </p>
             </Link>
-            <p onClick={() => setShowBurgerMenu(true)}>News</p>
-            <p onClick={() => setShowBurgerMenu(true)}>Contact Us</p>
+            <a href="#clientsId">
+              <p onClick={() => setShowBurgerMenu(false)}>Clients</p>
+            </a>
+            <a href="#contactsId">
+              <p onClick={() => setShowBurgerMenu(false)}>Contact Us</p>
+            </a>
           </motion.div>
           <div className="burger-info">
             <div className="burger-logo">
@@ -181,15 +195,21 @@ const HomeBanner = () => {
             <Link to="careers">
               <p>Careers</p>
             </Link>
-            <p>Our Services</p>
+            <a href="#servicesId">
+              <p>Our Services</p>
+            </a>
             <Link
               style={{ textDecoration: "none", textDecorationColor: "red" }}
               to="about-us"
             >
               <p>About Us</p>
             </Link>
-            <p>News</p>
-            <p>Contact Us</p>
+            <a href="#clientsId">
+              <p>Clients</p>
+            </a>
+            <a href="#contactsId">
+              <p>Contact Us</p>
+            </a>
           </div>
         </nav>
         <div className="banner-info">
@@ -210,13 +230,15 @@ const HomeBanner = () => {
                   READ MORE
                 </motion.button>
               </Link>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.9 }}
-                className="contact-button"
-              >
-                CONTACT US
-              </motion.button>
+              <a href="#contactsId">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.9 }}
+                  className="contact-button"
+                >
+                  CONTACT US
+                </motion.button>
+              </a>
             </div>
           </div>
 
