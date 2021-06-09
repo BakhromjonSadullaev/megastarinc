@@ -25,8 +25,10 @@ const Careers = () => {
           <ul>
             <li>- Pay 70 cents per mile</li>
             <li>- $150 layover fee (If it is not drivers fault)</li>
-            <li>- Detention $20 per hour</li>
-            <li>- 1099 tax</li>
+            <li>- Detention $20 per hour (after 2 hours of waiting)</li>
+            <li>- Driver bonus (on time pick up and delivery)</li>
+            <li>- New Trucks (fridge and microwave)</li>
+            <li style={{ fontWeight: "500" }}>- 1099 tax</li>
             <li>- New trucks</li>
           </ul>
         </div>
@@ -38,19 +40,24 @@ const Careers = () => {
             <li>- 13 cent maintenance per mile</li>
             <li>- Trailer rent $250 weekly</li>
             <li>- Insurance depending on driver's record</li>
-            <li>- $150 IFTA, Logbook, adminstrative fee</li>
+            <li>- $40 IFTA</li>
+            <li>- $75 Logbook (24/7 support)</li>
+            <li>- $75 Adminstrative fee</li>
           </ul>
         </div>
         <div className="career-info-card">
           <h2>Owner Operator</h2>
           <ul>
             <li>- 15% dispatching fee from the gross</li>
-            <li>- 13 cent maintenance fee</li>
+            <li>- Trailer rent $250 weekly</li>
             <li>- Insurance depending on driver's record</li>
-            <li>- 1$150 IFTA, Logbook, adminstrative fee</li>
+            <li>- $40 IFTA</li>
+            <li>- $75 Logbook (24/7 support)</li>
+            <li>- $75 Adminstrative fee</li>
           </ul>
         </div>
       </div>
+
       <form className="careers-form">
         <h1 className="form-title">Application Form</h1>
         <div className="default-infoInput-container">
@@ -138,6 +145,13 @@ const Careers = () => {
         </div>
         <button className="send-vacant">Send</button>
       </form>
+      <div className="lease-to-purchase">
+        <h2>Do you want to apply for Lease to purchase ?</h2>
+        <Link to="/lease-to-purchase">
+          {" "}
+          <button>Apply Now</button>
+        </Link>
+      </div>
     </div>
   );
 };

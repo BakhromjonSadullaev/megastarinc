@@ -13,12 +13,17 @@ import Testimonials from "./Components/Testimonials/Testimonials";
 import AboutUs from "./Pages/AboutUs";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import Careers from "./Pages/Careers";
+import LeaseToPurchase from "./Pages/LeaseToPurchase";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
+          <Route path="/lease-to-purchase">
+            <LeaseToPurchase />
+            <Footer />
+          </Route>
           <Route path="/careers">
             <Careers />
             <Footer />
