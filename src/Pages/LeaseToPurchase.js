@@ -21,7 +21,7 @@ const LeaseToPurchase = () => {
               <BiArrowBack style={{ marginRight: "1rem" }} /> Back To Home
             </button>
           </Link>
-          <h1>MEGASTARINC</h1>
+          <h1>MEGASTAR</h1>
         </div>
       </div>
       <h1 className="lease-title">Lease to purchase</h1>
@@ -48,7 +48,7 @@ const LeaseToPurchase = () => {
               }}
               type="text"
               name="Category"
-              placeholder="Select your option"
+              placeholder="Desired Truck Model"
               onClick={() => setIsOptions(!isOptions)}
             />
             <BiDownArrow
@@ -106,7 +106,7 @@ const LeaseToPurchase = () => {
               }}
               type="text"
               name="Category"
-              placeholder="Select your option"
+              placeholder="Trailer Type"
               onClick={() => setIsOptions2(!isOptions2)}
             />
             <BiDownArrow
@@ -156,7 +156,7 @@ const LeaseToPurchase = () => {
               }}
               type="text"
               name="Category"
-              placeholder="Select your option"
+              placeholder="Equipment Mile Range"
               onClick={() => setIsOptions3(!isOptions3)}
             />
             <BiDownArrow
@@ -209,7 +209,7 @@ const LeaseToPurchase = () => {
               }}
               type="text"
               name="Category"
-              placeholder="Select your option"
+              placeholder="Down Payment"
               onClick={() => setIsOptions4(!isOptions4)}
             />
             <BiDownArrow
