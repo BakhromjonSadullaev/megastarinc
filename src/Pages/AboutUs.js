@@ -14,7 +14,7 @@ const AboutUs = () => {
               <BiArrowBack style={{ marginRight: "1rem" }} /> Back To Home
             </button>
           </Link>
-          <h1>MEGASTARINC</h1>
+          <h1>MEGASTAR</h1>
         </div>
       </div>
       {/* <div className="back">
@@ -62,12 +62,12 @@ const AboutUs = () => {
                 while becoming continuously more efficient ourselves
               </p>
             </div>
-            <img className="about-img" src="/2-removebg.png" alt="" />
+            <img className="about-img" src="/cargo3d-removebg.png" alt="" />
           </div>
         </div>
 
         <div className="third-block">
-          <img src="/black-removebg.png" alt="" />
+          <img src="/cargo3d-removebg.png" alt="" />
           <div className="first-block-text">
             <h2>SAFETY</h2>
             <p>

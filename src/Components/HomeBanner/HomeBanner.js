@@ -85,7 +85,7 @@ const HomeBanner = () => {
             <div className="header-info">
               <div className="info">
                 <FaHome />
-                <p>4823 North Central Ave Apt 3A Chicago IL</p>
+                <p> Chicago IL</p>
               </div>
               <div className="info">
                 <FaPhoneAlt />
@@ -93,7 +93,7 @@ const HomeBanner = () => {
               </div>
               <div className="info">
                 <FaRegClock />
-                <p>Mon-Sat:9AM-6PM</p>
+                <p>Mon-Sat: 7AM-7PM</p>
               </div>
             </div>
           </div>
@@ -172,7 +172,7 @@ const HomeBanner = () => {
             <div>
               <div className="info-burger">
                 <FaHome />
-                <p>4823 North Central Ave Apt 3A Chicago IL</p>
+                <p> Chicago IL</p>
               </div>
               <div className="info-burger">
                 <FaPhoneAlt />
@@ -180,7 +180,7 @@ const HomeBanner = () => {
               </div>
               <div className="info-burger">
                 <FaRegClock />
-                <p>Mon-Sat:9AM-6PM</p>
+                <p>Mon-Sat: 7AM-7PM</p>
               </div>
             </div>
           </div>
@@ -247,7 +247,7 @@ const HomeBanner = () => {
             animate={{ scale: 1 }}
             className="banner-img"
           >
-            <img src="/crop.png" alt="" />
+            <img src="/cargo3d-removebg.png" alt="" />
           </motion.div>
         </div>
       </div>

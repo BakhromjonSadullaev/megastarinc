@@ -82,7 +82,7 @@ const Footer = () => {
           </div>
           <div className="useful-links">
             <BsClock />
-            <p>Mon-Sat: 9:00-18:00</p>
+            <p>Mon-Sat: 7:00 AM - 7:00 PM</p>
           </div>
         </div>
       </div>

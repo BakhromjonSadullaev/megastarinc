@@ -15,7 +15,7 @@ const Careers = () => {
               <BiArrowBack style={{ marginRight: "1rem" }} /> Back To Home
             </button>
           </Link>
-          <h1>MEGASTARINC</h1>
+          <h1>MEGASTAR</h1>
         </div>
       </div>
       <h1 className="careers-title">Join our community</h1>
